@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad SAN MARTIN - Institucional</title> 
+    <link rel="stylesheet" href="/styles.css"> 
+    <style>
+        .main-content { padding: 50px 20px; min-height: 500px; max-width: 1200px; margin: 0 auto; }
+        .main-content h2 { color: #003366; border-bottom: 2px solid #ffd700; padding-bottom: 10px; margin-bottom: 30px; }
+        
+        /* Estilos para el Menú de Anclas Internas */
+        .internal-nav { text-align: center; margin-bottom: 40px; }
+        .internal-nav button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .internal-nav button:hover {
+            background-color: #004080;
+            transform: translateY(-2px);
+        }
+
+        /* Estilos de las secciones internas (copiados de tu diseño previo) */
+        .section-box { padding: 30px; margin-bottom: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-top: 5px solid #ffd700; }
+        .section-box h3 { color: #003366; margin-top: 0; font-size: 24px; margin-bottom: 15px; }
+        
+        /* Historia */
+        .timeline { list-style: none; padding: 0; }
+        .timeline li { border-left: 3px solid #003366; padding-left: 20px; margin-bottom: 20px; position: relative; }
+        .timeline li::before { content: '•'; position: absolute; left: -11px; top: 0; color: #ffd700; font-size: 20px; background-color: white; padding: 0 5px; }
+        
+        /* Normativa */
+        .document-list { list-style: none; padding: 0; }
+        .document-list li { margin-bottom: 10px; }
+        .document-list a { display: block; padding: 10px 15px; background-color: #f4f4f4; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #003366; transition: background-color 0.3s; }
+        .document-list a:hover { background-color: #e0e0e0; }
+    </style>
+</head>
+<body>
+
+    <li class="nav-item"><a href="/index.html">INICIO</a></li>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="uni.html">UNI. SAN MARTIN ▼</a>
+                <div class="dropdown-content">
+                    <a href="uni_san_martin.html#historia">Nuestra historia</a> 
+                    <a href="uni_san_martin.html#vision">Vision y Mision</a> 
+                    <a href="uni_san_martin.html#normativa">Normativa y Reglamento</a> 
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#">FACULTADES ▼</a>
+                <div class="dropdown-content">
+                    <a href="facultad.html">Ingenieria</a>
+                    <a href="empresariales.html">Ciencias Empresariales</a>
+                    <a href="salud.html">Ciencoas de Salud</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#">ADMISIONES ▼</a>
+                <div class="dropdown-content">
+                    <a href="admision.html">Inscripciones</a>
+                    <a href="reincorporaciones.html">Reincorporaciones</a>
+                </div>
+            </li>
+
+            <li class="nav-item"><a href="docente.html">DOCENCIA</a></li>
+            <li class="nav-item"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="main-content">
+        <h2>Información Institucional de la Universidad San Martín</h2>
+
+        <div class="internal-nav">
+            <button onclick="location.href='#historia'">Nuestra Historia</button>
+            <button onclick="location.href='#vision'">Visión y Misión</button>
+            <button onclick="location.href='#normativa'">Normativa y Reglamento</button>
+        </div>
+
+        <div id="historia" class="section-box">
+            <h3>Nuestra Historia ✨</h3>
+            <p>La Universidad San Martín ha sido un pilar en la educación superior de la región durante más de dos décadas, adaptándose a las necesidades del mercado y manteniendo un compromiso inquebrantable con la excelencia académica.</p>
+            
+            <ul class="timeline">
+                <li>
+                    <h3>1998: Fundación</h3>
+                    <p>Se establecen las bases de la universidad con las facultades iniciales de Ingeniería y Ciencias Empresariales, con el objetivo de formar líderes y profesionales éticos.</p>
+                </li>
+                <li>
+                    <h3>2005: Expansión Académica</h3>
+                    <p>Se lanza la Facultad de Ciencias de la Salud, respondiendo a la creciente demanda de profesionales médicos y paramédicos altamente capacitados.</p>
+                </li>
+                <li>
+                    <h3>2015: Reconocimiento Nacional</h3>
+                    <p>La universidad obtiene la acreditación completa y es reconocida por su calidad en investigación y contribución social.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="vision" class="section-box">
+            <h3>Visión y Misión 🎯</h3>
+            
+            <h4 style="color: #003366; margin-top: 10px;">Nuestra Visión</h4>
+            <p>Ser la universidad líder en Latinoamérica, reconocida por su excelencia académica, su innovación en la investigación y su impacto positivo en el desarrollo sostenible de la sociedad global.</p>
+
+            <h4 style="color: #003366; margin-top: 20px;">Nuestra Misión</h4>
+            <p>Formar profesionales competentes y socialmente responsables a través de un modelo educativo integral, que promueve la investigación aplicada, la extensión universitaria y el compromiso ético con la comunidad.</p>
+        </div>
+
+        <div id="normativa" class="section-box">
+            <h3>Normativa y Reglamentos 📜</h3>
+            
+            <p>Accede a los documentos oficiales que rigen la vida académica, administrativa y estudiantil de nuestra universidad.</p>
+            
+            <ul class="document-list">
+                <li><a href="#" target="_blank">Reglamento General de Estudiantes (PDF)</a></li>
+                <li><a href="#" target="_blank">Reglamento Interno de Docencia e Investigación (PDF)</a></li>
+                <li><a href="#" target="_blank">Estatuto Orgánico de la Universidad San Martín (PDF)</a></li>
+                <li><a href="#" target="_blank">Manual de Convivencia y Ética Universitaria (PDF)</a></li>
+            </ul>
+        </div>
+        
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            
+            <div class="footer-section about">
+                <h3>Universidad San Martín</h3>
+                <p>Comprometidos con la excelencia académica y la investigación socialmente relevante.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Formación de profesionales éticos y competentes.</p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="icon-phone"></i> Tel: +591 4 400 000</p>
+                <p><i class="icon-email"></i> Email: info@sanmartin.edu</p>
+                
+                <div class="socials">
+                    <a href="#"><img src="img/fc.webp" alt="Facebook"></a>
+                    <a href="#"><img src="img/wh.jpg" alt="whatsapp"></a>
+                    <a href="#"><img src="img/ins.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section location">
+                <h3>Ubicación</h3>
+                <img src="img/uni.png" alt="Mapa de Ubicación" class="map-image">
+                <address style="font-style: normal; margin-top: 10px;">
+                    Av. Principal #1234, Zona Universitaria<br>
+                    Ciudad, País
+                </address>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

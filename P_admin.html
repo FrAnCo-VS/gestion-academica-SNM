@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Administrativa | UNIVERSIDAD SAN MARTIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"><i class="fas fa-university"></i><span>UNIVERSIDAD SAN MARTIN</span></div>
+        <nav class="nav-menu">
+            <a href="/index.html">Inicio</a>
+            
+            <div class="dropdown">
+                <a href="facultad.html" class="dropbtn">
+                    Facultades <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/facultades/juridicas">Ciencias Jurídicas <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/empresariales">Ciencias Empresariales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/ingenieria">Ingeniería <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/salud">Ciencias de la Salud <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/sociales">Ciencias Sociales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/carreras/semipresenciales">Carreras Semipresenciales <i class="fas fa-home"></i> <i class="fas fa-chevron-right"></i></a>
+                    <a href="/modalidades/estudio">Modalidades de Estudio <i class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+
+            <a href="docente.html">Docentes</a>
+            <a href="calendario.html">Calendario Académico</a>
+            <a href="soporte.html"><i class="fas fa-headset"></i> Soporte</a>
+            <a href="logout" class="btn-acceder" style="background-color: #dc3545!important;"><i class="fas fa-sign-out-alt"></i> SALIR</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div>
+                <h2><i class="fas fa-cogs"></i> Panel de Control Administrativo ⚙️</h2>
+                <p>Bienvenido, Jefe de Registro Académico | Rol: Administrador Total</p>
+            </div>
+            <a href="/admin/perfil" style="color:var(--color-secondary);">Mi Perfil</a>
+        </div>
+        
+        <h3>Indicadores Clave (KPIs)</h3>
+        <section class="dashboard-grid admin-kpi-grid">
+            <div class="stat-card admin-stat-card">
+                <h4>Matrícula Activa</h4>
+                <p>8,450</p>
+            </div>
+            <div class="stat-card admin-stat-card">
+                <h4>Tasa de Deserción</h4>
+                <p>3.2%</p>
+            </div>
+            <div class="stat-card admin-stat-card">
+                <h4>Cupos Disponibles</h4>
+                <p>1,120</p>
+            </div>
+            <div class="stat-card admin-stat-card">
+                <h4>Trámites Pendientes</h4>
+                <p style="color: #dc3545;">258</p>
+            </div>
+        </section>
+
+        <h3>Módulos de Gestión</h3>
+        <section class="kpi-grid">
+            <a href="/admin/usuarios" class="action-card">
+                <i class="fas fa-users-cog"></i>
+                <h4>Gestión de Usuarios</h4>
+                <p>Crear, editar y asignar roles a estudiantes y personal.</p>
+            </a>
+            <a href="/admin/reportes" class="action-card">
+                <i class="fas fa-chart-bar"></i>
+                <h4>Reportes Institucionales</h4>
+                <p>Generar informes estadísticos y académicos oficiales.</p>
+            </a>
+            <a href="/admin/tesoreria" class="action-card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4>Módulo de Tesorería</h4>
+                <p>Control de pagos, facturación y cuentas por cobrar.</p>
+            </a>
+            <a href="/admin/config" class="action-card">
+                <i class="fas fa-cogs"></i>
+                <h4>Configuración del SGA</h4>
+                <p>Ajustes globales, calendarios y normativa del sistema.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-map-marker-alt"></i> Ubicación</h4>
+                <p>Av. Principal #1234, Zona Universitaria</p>
+                <p>Ciudad, País</p>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone-alt"></i> Contacto</h4>
+                <p>Oficina Central: (591) 4-123456</p>
+                <p>Email: info@usm.edu</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Síguenos</h4>
+                <a href="tel:+59170012345" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://facebook.com/universidadusm" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="mailto:info@usm.edu" title="Email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="footer-info">
+             <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

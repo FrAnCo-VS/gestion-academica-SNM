@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad SAN MARTIN - Institucional</title> 
+    <link rel="stylesheet" href="/styles.css"> 
+    <style>
+        .main-content { padding: 50px 20px; min-height: 500px; max-width: 1200px; margin: 0 auto; }
+        .main-content h2 { color: #003366; border-bottom: 2px solid #ffd700; padding-bottom: 10px; margin-bottom: 30px; }
+        
+        /* Estilos para el Menú de Anclas Internas */
+        .internal-nav { text-align: center; margin-bottom: 40px; }
+        .internal-nav button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .internal-nav button:hover {
+            background-color: #004080;
+            transform: translateY(-2px);
+        }
+
+        /* Estilos de las secciones internas (copiados de tu diseño previo) */
+        .section-box { padding: 30px; margin-bottom: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-top: 5px solid #ffd700; }
+        .section-box h3 { color: #003366; margin-top: 0; font-size: 24px; margin-bottom: 15px; }
+        
+        /* Historia */
+        .timeline { list-style: none; padding: 0; }
+        .timeline li { border-left: 3px solid #003366; padding-left: 20px; margin-bottom: 20px; position: relative; }
+        .timeline li::before { content: '•'; position: absolute; left: -11px; top: 0; color: #ffd700; font-size: 20px; background-color: white; padding: 0 5px; }
+        
+        /* Normativa */
+        .document-list { list-style: none; padding: 0; }
+        .document-list li { margin-bottom: 10px; }
+        .document-list a { display: block; padding: 10px 15px; background-color: #f4f4f4; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #003366; transition: background-color 0.3s; }
+        .document-list a:hover { background-color: #e0e0e0; }
+    </style>
+</head>
+<body>
+
+    <li class="nav-item"><a href="/index.html">INICIO</a></li>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="uni.html">UNI. SAN MARTIN ▼</a>
+                <div class="dropdown-content">
+                    <a href="uni_san_martin.html#historia">Nuestra historia</a> 
+                    <a href="uni_san_martin.html#vision">Vision y Mision</a> 
+                    <a href="uni_san_martin.html#normativa">Normativa y Reglamento</a> 
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#">FACULTADES ▼</a>
+                <div class="dropdown-content">
+                    <a href="facultad.html">Ingenieria</a>
+                    <a href="empresariales.html">Ciencias Empresariales</a>
+                    <a href="salud.html">Ciencoas de Salud</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#">ADMISIONES ▼</a>
+                <div class="dropdown-content">
+                    <a href="admision.html">Inscripciones</a>
+                    <a href="reincorporaciones.html">Reincorporaciones</a>
+                </div>
+            </li>
+
+            <li class="nav-item"><a href="docente.html">DOCENCIA</a></li>
+            <li class="nav-item"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+<main class="main-content">
+    <style>
+        .main-content { padding: 50px 20px; min-height: 500px; max-width: 1200px; margin: 0 auto; }
+        .main-content h2 { color: #003366; border-bottom: 2px solid #ffd700; padding-bottom: 10px; margin-bottom: 30px; }
+        .criteria-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+        .criteria-grid div { flex: 1; min-width: 250px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .criteria-grid h4 { color: #003366; margin-top: 0; }
+    </style>
+
+    <h2>Información de Docencia 👩‍🏫</h2>
+    
+    <p>Nuestra planta docente está conformada por profesionales de alto nivel, comprometidos con la enseñanza, la investigación y la mentoría estudiantil.</p>
+    
+    <h3>Criterios de Excelencia Docente:</h3>
+    <div class="criteria-grid">
+        <div>
+            <h4>Investigación</h4>
+            <p>Participación activa en proyectos de investigación y publicaciones indexadas.</p>
+        </div>
+        <div>
+            <h4>Evaluación</h4>
+            <p>Uso de metodologías de evaluación justas y formativas.</p>
+        </div>
+        <div>
+            <h4>Innovación</h4>
+            <p>Implementación de tecnologías y métodos de enseñanza modernos.</p>
+        </div>
+    </div>
+    <p style="margin-top: 20px;"><a href="#" style="color: #003366; text-decoration: none; font-weight: bold;">Acceder al Portal Docente >></a></p>
+</main>
+
+<footer class="main-footer">
+        <div class="footer-content">
+            
+            <div class="footer-section about">
+                <h3>Universidad San Martín</h3>
+                <p>Comprometidos con la excelencia académica y la investigación socialmente relevante.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Formación de profesionales éticos y competentes.</p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="icon-phone"></i> Tel: +591 4 400 000</p>
+                <p><i class="icon-email"></i> Email: info@sanmartin.edu</p>
+                
+                <div class="socials">
+                    <a href="#"><img src="img/fc.webp" alt="Facebook"></a>
+                    <a href="#"><img src="img/wh.jpg" alt="whatsapp"></a>
+                    <a href="#"><img src="img/ins.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section location">
+                <h3>Ubicación</h3>
+                <img src="img/uni.png" alt="Mapa de Ubicación" class="map-image">
+                <address style="font-style: normal; margin-top: 10px;">
+                    Av. Principal #1234, Zona Universitaria<br>
+                    Ciudad, País
+                </address>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    </body>
+</html>

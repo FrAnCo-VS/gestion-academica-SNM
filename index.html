@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad SAN MARTIN - Inicio</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <li class="nav-item"><a href="/index.html">INICIO</a></li>
+
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="/informacion/uni.html">UNI. SAN MARTIN ▼</a>
+                <div class="dropdown-content">
+                    <a href="/informacion/uni.html#historia">Nuestra historia</a>
+                    <a href="/informacion/uni.html#vision">Vision y Mision</a>
+                    <a href="/informacion/uni.html#normativa">Normativa y Reglamento</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#">FACULTADES ▼</a>
+                <div class="dropdown-content">
+                    <a href="/informacion/facultad.html">Ingenieria</a>
+                    <a href="empresariales.html">Ciencias Empresariales</a>
+                    <a href="salud.html">Ciencoas de Salud</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#">ADMISIONES ▼</a>
+                <div class="dropdown-content">
+                    <a href="/informacion/admision.html">Inscripciones</a>
+                    <a href="reincorporaciones.html">Reincorporaciones</a>
+                </div>
+            </li>
+
+            <li class="nav-item"><a href="/informacion/docente.html">DOCENCIA</a></li>
+            <li class="nav-item"><a href="/informacion/contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="slider-container">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <div class="mySlides fade"><img src="img/img1.jpg" alt="Retoma tu Carrera" style="width:100%"><div class="text"><br></div></div>
+        <div class="mySlides fade"><img src="img/img1.jpg" alt="Oferta Académica" style="width:100%"><div class="text"> <br></div></div>
+        <div class="mySlides fade"><img src="img/img1.jpg" alt="Investigación" style="width:100%"><div class="text"><br> </div></div>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div style="text-align:center; padding: 10px 0;">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+
+    <section class="info-bar">
+        <p>LA EDUCACIÓN ES LA SOLUCIÓN</p>
+        <div class="logo-text">
+            <h1>SAN MARTIN</h1>
+            <p>Formación de Calidad</p>
+        </div>
+    </section>
+
+            <section class="container access-roles">
+            <div class="role-card student-card">
+                <h2>MI EXPEDIENTE ACADÉMICO 📖</h2>
+                <ul>
+                    <li>• Inscripción</li>
+                    <li>• Certificados</li>
+                    <li>• Tesis/Grado</li>
+                </ul>
+                <a href="informacion/P_estudiantil.html" class="btn-role">Ingresar al Portal Estudiantil</a>
+            </div>
+            
+            <div class="role-card teacher-card">
+                <h2>CÁTEDRAS Y GESTIÓN 👨‍🏫</h2>
+                <ul>
+                    <li>• Carga de Notas</li>
+                    <li>• Asistencia</li>
+                    <li>• Comunicación</li>
+                </ul>
+                <a href="informacion/P_docente.html" class="btn-role">Ingresar como Docente</a>
+            </div>
+            
+            <div class="role-card admin-card">
+                <h2>GESTIÓN UNIVERSITARIA 💼</h2>
+                <ul>
+                    <li>• Matriz de Usuarios</li>
+                    <li>• Planificación</li>
+                    <li>• Tesorería</li>
+                </ul>
+                <a href="informacion/P_admin.html" class="btn-role">Ingresar a una Intranet</a>
+            </div>
+        </section>
+
+
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            
+            <div class="footer-section about">
+                <h3>Universidad San Martín</h3>
+                <p>Comprometidos con la excelencia académica y la investigación socialmente relevante.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Formación de profesionales éticos y competentes.</p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="icon-phone"></i> Tel: +591 4 400 000</p>
+                <p><i class="icon-email"></i> Email: info@sanmartin.edu</p>
+                
+                <div class="socials">
+                    <a href="#"><img src="img/fc.webp" alt="Facebook"></a>
+                    <a href="#"><img src="img/wh.jpg" alt="whatsapp"></a>
+                    <a href="#"><img src="img/ins.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section location">
+                <h3>Ubicación</h3>
+                <img src="img/uni.png" alt="Mapa de Ubicación" class="map-image">
+                <address style="font-style: normal; margin-top: 10px;">
+                    Av. Principal #1234, Zona Universitaria<br>
+                    Ciudad, País
+                </address>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="slider.js"></script>
+</body>
+</html>

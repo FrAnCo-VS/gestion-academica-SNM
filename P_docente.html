@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portal Docente | UNIVERSIDAD SAN MARTIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"><i class="fas fa-university"></i><span>UNIVERSIDAD SAN MARTIN</span></div>
+        <nav class="nav-menu">
+            <a href="/index.html">Inicio</a>
+            
+            <div class="dropdown">
+                <a href="facultad.html" class="dropbtn">
+                    Facultades <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/facultades/juridicas">Ciencias Jurídicas <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/empresariales">Ciencias Empresariales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/ingenieria">Ingeniería <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/salud">Ciencias de la Salud <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/sociales">Ciencias Sociales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/carreras/semipresenciales">Carreras Semipresenciales <i class="fas fa-home"></i> <i class="fas fa-chevron-right"></i></a>
+                    <a href="/modalidades/estudio">Modalidades de Estudio <i class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+
+            <a href="docente.html">Docentes</a>
+            <a href="calendario.html">Calendario Académico</a>
+            <a href="soporte.html"><i class="fas fa-headset"></i> Soporte</a>
+            <a href="/logout" class="btn-acceder" style="background-color: #dc3545!important;"><i class="fas fa-sign-out-alt"></i> SALIR</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div>
+                <h2><i class="fas fa-chalkboard-teacher"></i> Bienvenido, Dr. Carlos Díaz 👨‍🏫</h2>
+                <p>Departamento: Ingeniería de Sistemas | ID Docente: 102938</p>
+            </div>
+            <a href="/docente/perfil" style="color:var(--color-secondary);">Mi Perfil</a>
+        </div>
+        
+        <section class="dashboard-grid">
+            <div class="main-content">
+                <h3>Mis Cátedras Asignadas (Semestre II)</h3>
+                <div class="dashboard-grid" style="grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 25px;">
+                    <div class="stat-card teacher-stat-card">
+                        <h4>Estudiantes Totales</h4>
+                        <p>155</p>
+                    </div>
+                    <div class="stat-card teacher-stat-card">
+                        <h4>Plazo Límite de Notas</h4>
+                        <p>10 ENE</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <div class="course-row" style="background-color: #eee; font-weight: bold;">
+                        <span>Cátedra</span>
+                        <span>Acciones</span>
+                    </div>
+                    <div class="course-row">
+                        <span>IS-301: Algoritmos Avanzados (Gpo A)</span>
+                        <div>
+                            <a href="/docente/notas/301" class="btn-role" style="padding: 5px 10px; margin-right: 10px;">Cargar Notas</a>
+                            <a href="/docente/asistencia/301" class="btn-role" style="padding: 5px 10px;">Asistencia</a>
+                        </div>
+                    </div>
+                    <div class="course-row">
+                        <span>IS-405: Programación Móvil (Gpo B)</span>
+                        <div>
+                            <a href="/docente/notas/405" class="btn-role" style="padding: 5px 10px; margin-right: 10px;">Cargar Notas</a>
+                            <a href="/docente/asistencia/405" class="btn-role" style="padding: 5px 10px;">Asistencia</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="sidebar">
+                <h3>Trámites Rápidos</h3>
+                <a href="/docente/licencia" class="btn-role" style="background-color: var(--color-primary); margin-bottom: 15px; color: #fff;">Solicitar Licencia</a>
+                <a href="/docente/reportes" class="btn-role" style="background-color: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); margin-bottom: 15px;">Generar Reporte</a>
+
+                <h3 style="margin-top: 30px;">Notificaciones</h3>
+                <p style="font-size: 0.9rem; color: #007bff;"><i class="fas fa-info-circle"></i> Nueva actualización del Manual SGA v2.0.</p>
+                <p style="font-size: 0.9rem; color: #28a745;"><i class="fas fa-check-circle"></i> Solicitud de ascenso aprobada.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-map-marker-alt"></i> Ubicación</h4>
+                <p>Av. Principal #1234, Zona Universitaria</p>
+                <p>Ciudad, País</p>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone-alt"></i> Contacto</h4>
+                <p>Oficina Central: (591) 4-123456</p>
+                <p>Email: info@usm.edu</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Síguenos</h4>
+                <a href="tel:+59170012345" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://facebook.com/universidadusm" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="mailto:info@usm.edu" title="Email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="footer-info">
+             <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

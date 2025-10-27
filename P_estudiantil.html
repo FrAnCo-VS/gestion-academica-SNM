@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portal Estudiantil | UNIVERSIDAD SAN MARTIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"><i class="fas fa-university"></i><span>UNIVERSIDAD SAN MARTIN</span></div>
+        <nav class="nav-menu">
+            <a href="/index.html">Inicio</a>
+            
+            <div class="dropdown">
+                <a href="facultad.html" class="dropbtn">
+                    Facultades <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/facultades/juridicas">Ciencias Jurídicas <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/empresariales">Ciencias Empresariales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/ingenieria">Ingeniería <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/salud">Ciencias de la Salud <i class="fas fa-chevron-right"></i></a>
+                    <a href="/facultades/sociales">Ciencias Sociales <i class="fas fa-chevron-right"></i></a>
+                    <a href="/carreras/semipresenciales">Carreras Semipresenciales <i class="fas fa-home"></i> <i class="fas fa-chevron-right"></i></a>
+                    <a href="/modalidades/estudio">Modalidades de Estudio <i class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+
+            <a href="docente.html">Docentes</a>
+            <a href="calendario.html">Calendario Académico</a>
+            <a href="soporte.html"><i class="fas fa-headset"></i> Soporte</a>
+            <a href="/logout" class="btn-acceder" style="background-color: #dc3545!important;"><i class="fas fa-sign-out-alt"></i> SALIR</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div>
+                <h2><i class="fas fa-user-graduate"></i> Bienvenido, Ana García 👋</h2>
+                <p>ID Estudiante: 20210456 | Ingeniería de Sistemas</p>
+            </div>
+            <a href="/perfil" style="color:var(--color-secondary);">Mi Perfil</a>
+        </div>
+        
+        <section class="dashboard-grid">
+            <div class="main-content">
+                <h3>Resumen Académico</h3>
+                <div class="dashboard-grid" style="grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div class="stat-card student-stat-card"> 
+                        <h4>Promedio General (PGA)</h4>
+                        <p>4.25</p>
+                    </div>
+                    <div class="stat-card student-stat-card"> 
+                        <h4>Créditos Aprobados</h4>
+                        <p>120 / 240</p>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 30px;">Próximas Evaluaciones 📝</h3>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                    <thead>
+                        <tr style="background-color: #eee;">
+                            <th style="padding: 10px; text-align: left;">Materia</th>
+                            <th style="padding: 10px; text-align: left;">Evaluación</th>
+                            <th style="padding: 10px; text-align: left;">Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Algoritmos Avanzados</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">Examen Final</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">05/12/2025</td></tr>
+                        <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Cálculo III</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">Práctica N° 4</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">10/12/2025</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sidebar">
+                <h3>Accesos Rápidos</h3>
+                <a href="/estudiante/inscripcion" class="btn-role" style="background-color: var(--color-card-student); margin-bottom: 15px; color: #fff;">Inscripción de Materias</a>
+                <a href="/estudiante/notas" class="btn-role" style="background-color: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); margin-bottom: 15px;">Ver Historial de Notas</a>
+                <a href="/estudiante/tramites" class="btn-role" style="background-color: #fff; color: var(--color-primary); border: 1px solid var(--color-primary);">Solicitar Certificados</a>
+
+                <h3 style="margin-top: 30px;">Notificaciones</h3>
+                <p style="font-size: 0.9rem; color: #dc3545;"><i class="fas fa-exclamation-triangle"></i> Pago de matrícula pendiente.</p>
+                <p style="font-size: 0.9rem; color: #28a745;"><i class="fas fa-check-circle"></i> Certificado de egreso listo para recoger.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-map-marker-alt"></i> Ubicación</h4>
+                <p>Av. Principal #1234, Zona Universitaria</p>
+                <p>Ciudad, País</p>
+            </div>
+            <div class="footer-section">
+                <h4><i class="fas fa-phone-alt"></i> Contacto</h4>
+                <p>Oficina Central: (591) 4-123456</p>
+                <p>Email: info@usm.edu</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Síguenos</h4>
+                <a href="tel:+59170012345" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://facebook.com/universidadusm" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="mailto:info@usm.edu" title="Email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="footer-info">
+             <p>&copy; 2024 UNIVERSIDAD SAN MARTIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
